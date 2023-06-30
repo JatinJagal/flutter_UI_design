@@ -6,6 +6,7 @@ import 'package:project_test/component/icon_button.dart';
 import 'package:project_test/component/images.dart';
 import 'package:project_test/consts/colors.dart';
 import 'package:project_test/consts/lists.dart';
+import 'package:project_test/dimentions.dart';
 import 'package:project_test/hotel_detail_page.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -72,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 //------------Icon Button Card-------------------------
                 Container(
                   // color: Colors.green,
-                  height: 124,// 110 //114
+                  height: Dimensions.height60,// 110 //114//124
                   // width: 84,
                   child:
                   ListView.builder(
@@ -85,7 +86,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               selectedIndex = index;
                             });
                           },
-                            child: IconBtnCards(btnName[index],btnList[index],selectedIndex,index,84.0,10.0));
+                            child: IconBtnCards(btnName[index],btnList[index],selectedIndex,index,Dimensions.width95,10.0)); //84.0
                       }),
                 ),
                 SizedBox(
